@@ -1,0 +1,132 @@
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    color: #E9D5CA;
+    
+}
+h2{
+    color: rgb(0, 255, 0);
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+h3{
+    font-size: 2rem;
+    color: gold;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    margin: 0;
+}
+h4{
+    color: gold;
+    font-size: 1.75rem;
+    margin: 1px;
+}
+
+h2,h3,h4{
+    font-family: Helvetica, sans-serif;
+}
+
+.MaxScore{
+    top: 15%;
+    right: 12%;
+}
+
+body{
+    text-align: center;
+    background-color: #30054a;
+}
+
+.container{
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10px auto 0px;
+}
+
+.btn{
+    height: 75px;
+    width: 75px;
+    background-color: rgb(33, 31, 31);
+    margin: 2px;
+    display: inline-block;
+    border: 3.5px solid black;
+    border-radius: 10px;
+}
+
+p{
+    margin-top: 7px;
+    color: cyan;
+}
+
+.pressed {
+    box-shadow: 0 0 13px white;
+    background-color: grey;
+}
+
+.game-over{
+    background-color: red;
+}
+
+@media (max-width: 1008px) {
+
+    .btn{
+        height: 69px;
+        width: 69px;
+    }
+    .MaxScore{
+        right: 0%;
+    }    
+    h3{
+       position: relative;
+       right: 0%;
+        text-align: center;
+        font-size: 1.87rem;
+    }
+    h1{
+        font-size: 2.25rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .btn{
+        height: 63px;
+        width: 63px;
+    }   
+    h1{
+        font-size: 1.96rem;
+    } 
+    h2{
+        font-size: 1.61rem;
+    }
+    h3{
+        font-size: 1.77rem;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .btn{
+        height: 57px;
+        width: 57px;
+    }    
+    h1{
+        font-size: 1.80rem;
+    }
+    h2{
+        font-size: 1.55rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+}
+
+
+
