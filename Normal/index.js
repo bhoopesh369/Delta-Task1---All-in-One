@@ -6,17 +6,17 @@ var gamePattern = [];
 var playerPattern = [];
 
 function playSound(){
-    var aud = new Audio("sounds/scifi.mp3");
+    var aud = new Audio("Sounds/scifi.mp3");
     aud.play();
 }
 
 function gameOverSound(){
-    var aud = new Audio("sounds/wrong.mp3");
+    var aud = new Audio("Sounds/wrong.mp3");
     aud.play();
 }
 
 function playSound2(){
-    var aud = new Audio("sounds/scifi2.mp3");
+    var aud = new Audio("Sounds/scifi2.mp3");
     aud.play();
 }
 
