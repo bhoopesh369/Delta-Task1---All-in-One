@@ -71,7 +71,7 @@ function tileEffects(tile){
     activeTile.classList.add("pressed");
     setTimeout(function(){
         activeTile.classList.remove('pressed');
-    },300);
+    },200);
 }
 
 function previousTileEffects(){
@@ -150,6 +150,7 @@ document.addEventListener('keypress',function(){
  function handleClick(itr) {
 
     if (gamePattern[itr] === playerPattern[itr]) {
+      playSound();
       score = score + secs +1;  
       document.querySelector("h3").innerHTML = "Score : " + score ;
       if (playerPattern.length === gamePattern.length){  
@@ -192,7 +193,6 @@ function gameMain(){
         var userChosenTile = this.id;
         playerPattern.push(userChosenTile);
 
-        playSound();
         tileEffects(userChosenTile);
         handleClick(playerPattern.length-1);
     }

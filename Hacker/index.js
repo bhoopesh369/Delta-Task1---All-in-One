@@ -158,6 +158,8 @@ document.addEventListener('keypress',function(){
  function handleClick(itr) {
 
     if (gamePattern[itr] === playerPattern[itr]) {
+      playSound();
+      //scoring based on the amount of time left.  
       score = score + secs +1;  
       document.querySelector("h3").innerHTML = "Score : " + score ;
       if (playerPattern.length === gamePattern.length){  
@@ -182,8 +184,7 @@ for(var n=0;n<36;n++){
 function gameMain(){
     var userChosenTile = this.id;
     playerPattern.push(userChosenTile);
-  
-    playSound();
+
     //tileEffects(userChosenTile);
     handleClick(playerPattern.length-1);
  }

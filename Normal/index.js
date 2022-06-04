@@ -6,17 +6,17 @@ var gamePattern = [];
 var playerPattern = [];
 
 function playSound(){
-    var aud = new Audio("Sounds/scifi.mp3");
+    var aud = new Audio("sounds/scifi.mp3");
     aud.play();
 }
 
 function gameOverSound(){
-    var aud = new Audio("Sounds/wrong.mp3");
+    var aud = new Audio("sounds/wrong.mp3");
     aud.play();
 }
 
 function playSound2(){
-    var aud = new Audio("Sounds/scifi2.mp3");
+    var aud = new Audio("sounds/scifi2.mp3");
     aud.play();
 }
 
@@ -71,7 +71,6 @@ document.addEventListener('keypress',function(){
        var userChosenTile = this.id;
        playerPattern.push(userChosenTile);
        //tileEffects(userChosenTile);
-       playSound();
        var temp=[];
        for(let z=0 ; z<gamePattern.length;z++){
            temp.push(gamePattern[z]);
@@ -85,6 +84,7 @@ document.addEventListener('keypress',function(){
        for(i=0;i<playerPattern.length;i++){
 
         if(temp.includes(playerPattern[i])){   
+            playSound();
             //temp.pop(playerPattern[i]);
             const index = temp.indexOf(playerPattern[i]);
             if (index > -1) {

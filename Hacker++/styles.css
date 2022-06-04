@@ -55,7 +55,32 @@ body{
     display: inline-block;
     border: 3.5px solid black;
     border-radius: 10px;
+    position: relative;
+    transition: all .15s;
 }
+
+
+.btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 9px;
+    
+    background: rgb(205, 191, 41);
+    transition: all .15s;
+  }
+  
+.btn:hover{
+    color: #fff;
+  }
+  
+.btn:hover:after{
+    width: 100%;
+    height: 100%;
+  }
 
 p{
     margin-top: 7px;
@@ -63,7 +88,7 @@ p{
 }
 
 .pressed {
-    box-shadow: 0 0 13px white;
+    box-shadow: 0 0 14px white;
     background-color: grey;
 }
 
@@ -71,7 +96,33 @@ p{
     background-color: red;
 }
 
-@media (max-width: 1008px) {
+/* .leaderboard{
+   position:absolute;
+   height: 230px;
+   width: 180px;
+   left: 75%;
+   top: 25%;
+   background-color: rgb(0, 0, 0);
+   padding: 20px;
+   border: 3.5px solid rgb(94, 91, 91);
+   margin: 0;
+}
+
+.heading{
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(245, 220, 30);
+   font-size: 1.4rem;
+   font-weight: 600;
+}
+
+.inside{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 207, 58);
+    font-size: 0.9rem;
+} */
+
+
+@media (max-width: 1148px) {
 
     .btn{
         height: 69px;
@@ -94,6 +145,11 @@ p{
     }
     h4{
         font-size: 1.72rem;
+    }
+    .leaderboard{
+        position: relative;
+        right: 100%;
+        text-align: center;
     }
 }
 
